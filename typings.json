@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "dotenv": "registry:dt/dotenv#2.0.0+20170113195346",
+    "express": "registry:npm/express#4.14.0+20160925001530",
+    "express-graphql": "registry:dt/express-graphql#0.0.0+20160727004517",
+    "graphql": "registry:npm/graphql#0.5.0+20160602041655",
+    "graphql-relay": "registry:dt/graphql-relay#0.4.0+20161127092905",
+    "mongodb": "registry:npm/mongodb#2.1.0+20170107184700",
+    "sinon": "registry:npm/sinon#1.16.0+20160723033700"
+  },
+  "globalDependencies": {
+
+  }
+}

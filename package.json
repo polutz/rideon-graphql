@@ -1,0 +1,60 @@
+{
+  "name": "rideon-graphql",
+  "version": "1.0.0",
+  "description": "Free Community Club (freecom.club) is an opensouce project to create free democracy, where every citizen can vote and keep track to every proposal.",
+  "main": "server.js",
+  "scripts": {
+    "start": "gulp js && npm run gensalt && babel-node --presets es2015 dist/index.js",
+    "gensalt":"node gensalt.js",
+    "server": "gulp js && babel-node --presets es2015 dist/index.js",
+    "mocha": "mocha ./dist/**/*.js --compilers js:babel-core/register --require babel-polyfill",
+    "pretest": "gulp js && npm run gensalt",
+    "test": "nyc npm run mocha && nyc report --reporter=text-lcov > coverage.lcov && codecov --token=4237dbcc-9172-4587-aa71-df4a774c34fc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polutz/rideon-graphql.git"
+  },
+  "author": "alanmarcell.com.br",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polutz/rideon-graphql/issues"
+  },
+  "homepage": "https://github.com/polutz/rideon-graphql#readme",
+  "dependencies": {
+    "babel-loader": "^6.2.10",
+    "dotenv": "^4.0.0",
+    "events": "^1.1.1",
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.1",
+    "graphql": "^0.8.2",
+    "graphql-relay": "^0.4.4",
+    "kerberos": "0.0.22",
+    "mongodb": "^2.2.21",
+    "ptz-assert": "^1.2.0",
+    "ptz-user-app": "^1.0.1",
+    "ptz-user-graphql": "^1.0.1",
+    "ptz-user-repository": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.18.0",
+    "codecov": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-typescript": "^3.1.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "nyc": "^10.1.2",
+    "sinon": "^1.17.7",
+    "typescript": "^2.1.6",
+    "typings": "^2.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}

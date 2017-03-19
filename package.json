@@ -1,7 +1,7 @@
 {
   "name": "rideon-graphql",
   "version": "1.0.0",
-  "description": "Free Community Club (freecom.club) is an opensouce project to create free democracy, where every citizen can vote and keep track to every proposal.",
+  "description": "Este é o backend do Rideon, TCC do Alan Marcell para a FATEC, neste projeto estamos utilizando os módulos da Polutz.",
   "main": "server.js",
   "scripts": {
     "start": "gulp js && npm run gensalt && babel-node --presets es2015 dist/index.js",
